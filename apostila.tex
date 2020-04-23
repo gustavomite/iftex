@@ -1,0 +1,76 @@
+\documentclass{apostila}
+
+\title{Template de Apostila}
+\author{Gustavo Miranda Teixeira}
+\date{Abril 2020}
+\instituicao{Instituto Federal Minas Gerais}
+\unidade{Campus Rio Pomba}
+\curso{Bacharelado}{Ciência da Computação}
+\capaimg{capa.png}
+
+\begin{document}
+
+
+% -----------------------------------------------
+% Gera elementos pré-textuais
+% -----------------------------------------------
+\maketitle
+
+% -----------------------------------------------
+% Capítulo: Introdução
+% -----------------------------------------------
+\chapter{Introdução}
+
+Deve-se usar o comando \textbf{\textbackslash chapter} para dividir o conteúdo da apostila em aulas ou capítulos. Cada capítulo poderá conter um número definido de seções utilizando o comando \textbf{\textbackslash section}.
+
+\section{Primeira Seção}
+Cada capítulo poderá ser subdividido em uma ou mais seções.
+
+\section{Segunda Seção}
+Cada seção poderá ser subdividido em uma ou mais subseções. Para isso, basta utilizar novamente o camndo \textbf{\textbackslash section} para cada nova seção criada.
+
+\subsection{Subseção}
+Para criar uma subseção, utiliza-se o comando \textbf{\textbackslash subsection}.
+
+\chapter{Listas}
+Além de divisões em capítulos, seções e subseções, é possível utilizar listas de itens enumeradas, ou não.
+
+\section{Itens}
+
+Podemos criar uma lista de ítens utilizando o comando \textbf{\textbackslash begin\{itemize\}}:
+\begin{itemize}
+ \item Cada item deve ser identificado com o comando \textbf{\textbackslash item};
+ \item Podemos adicionar quantos itens quisermos;
+ \item Após o último item, é necessário indicar o encerramento da lista com o comando \textbf{\textbackslash end\{itemize\}}.
+\end{itemize}
+
+\section{Itens Enumerados}
+
+Listas também podem ser criadas utilizando uma numeração para seus items. Nesse caso, ao invés de iniciar um \textit{itemize}, vamos utilizar um \textit{enumerate}: \textbf{\textbackslash begin\{itemize\}}:
+\begin{enumerate}
+ \item A lista deve ser iniciada com o comando \textbf{\textbackslash begin\{enumerate\}};
+ \item Cada item deve ser identificado com o comando \textbf{\textbackslash item};
+ \item Após o último item, o comando \textbf{\textbackslash end\{enumerate\}} é usado para encerrar a lista.
+\end{enumerate}
+
+% -----------------------------------------------
+
+\chapter{Considerações Finais}
+
+Essa apostila é baseada no modelo de Marcos R. Ribeiro \cite{marcos:site} com pequenas adaptações.
+
+% -----------------------------------------------
+% Elementos pós-textuais
+% -----------------------------------------------
+\postextual
+
+% -----------------------------------------------
+% Referências bibliográficas
+% -----------------------------------------------
+\nocite{araujo:2016:abntex2}
+\nocite{marcos:site}
+\bibliography{referencias}
+
+
+
+\end{document}
